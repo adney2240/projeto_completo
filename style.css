@@ -132,11 +132,12 @@ a:hover {
     height: 40px;
     width: 40px;
     clip-path: circle(90vmax at 40px 40px);
-    box-shadow: 0px 0px 0px 0px #ffffff;
-    z-index: 1;
+    box-shadow: 0px #ffffff;
+    z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
 
+/* itens do menu */
 .menu-items {
     position: fixed;
     top: 0;
@@ -146,9 +147,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
+   
     transition: 400ms ease-in-out 0s;
     
 
@@ -165,6 +168,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
+    
 }
 
 
@@ -203,12 +207,14 @@ a:hover {
 
 #toggle:checked ~ .menu {
     box-shadow: 0px 0px 0px 90vmax white;
-    z-index: 2;
+    z-index: 1;
 }
 
 #toggle:checked ~ .menu-items {
     visibility: visible;
     opacity: 1;
+    
+
 
 
 }
