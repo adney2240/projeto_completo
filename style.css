@@ -51,7 +51,7 @@ h2 {
     transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
 }
 
-a:hover {
+.socialMedia a:hover {
     color: #2e1c2b;
     background-color: white;
 }
@@ -155,7 +155,7 @@ a:hover {
     transition: 400ms ease-in-out 0s;
 }
 
-.menu-items ul {
+.menu-items ul li a {
     list-style-type: none;
 }
 
@@ -221,7 +221,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 98%;
 }
 
 .card {
@@ -342,7 +342,8 @@ a:hover {
         flex-direction: column;
     }
     .container .cardContainer:nth-child(1),
-    .container .cardContainer:nth-child(3) {
+    .container .cardContainer:nth-child(3),
+    .container .cardContainer:nth-child(5) {
         flex-direction: column-reverse;
     }
     .card {
@@ -357,5 +358,12 @@ a:hover {
     .card:hover>.cardWrapper::before {
         height: 190px;
         width: 190px;
+    }
+    .cardWrapper h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+        transition: 0.3s;
     }
 }
