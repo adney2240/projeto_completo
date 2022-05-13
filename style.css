@@ -228,7 +228,7 @@ a:hover {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0;
-    background-image: url(imagem.jpg);
+    background-color: #2e1c2b;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,6 +239,27 @@ a:hover {
     color: white;
     cursor: pointer;
     transition: 0.3s;
+}
+
+
+/* estilo botao  */
+
+.cardText a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #2e1c2b;
+    color: white;
+    width: 35px;
+    height: 25px;
+    border: #2e1c2b 1px solid;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.cardText a:hover {
+    background-color: white;
+    color: #2e1c2b;
+    transition: 0.5s;
 }
 
 .cardText {
